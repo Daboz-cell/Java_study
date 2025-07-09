@@ -1,0 +1,233 @@
+                                INTRODUCTION TO JAVASCRIPT
+
+Java - programming language on its own - server side language
+Javascript - 
+    JS is a programming language designed to make web pages interactive and dynamic
+-What do we use JS for?
+1. User interactivity - a web page responding to user actions e.g clicking buttons, typing, scrolling, hovering e.t.c
+2. Reactivity - making our web pages dynamic
+ **dynamic - the page content is able to change by itself without reloading
+
+JS can run in two environments:
+1. In the browser - client side JS 
+2. In the server - NodeJS
+
+where can we write JavaScript?
+-This depends on how much JS code you have to write
+
+1. In a HTML document - head section -> if you want JS to run before html content
+                      - in the body section -> right above the closing body tag
+    - use script tag
+2. As as external file - for large JS codebase 
+  -create an external js file with a .js extension
+  -link your external script to html using script src 
+
+
+                  JS DATA TYPES
+1.String - represent text 
+2.Number - represents numeric values - both whole (integers) and floating (float) 19 , 20.65
+3.Boolean - represents truth values - True and False
+
+                  JS VARIABLES
+- A variable is a named container used to store data / values
+- how we declare variables in JS
+
+You can use these keywords to declare variables:
+1. let - modern way to declare variables in JS - values from let can be changed
+2. const - for constants - values cant be changed
+3. var - old way - works with old browsers  - not recommended -replaced by let - depracated
+
+How to output in JS -> console.log()
+
+
+    JS METHODS
+1. STRINGS
+2. NUMBERS
+-Most of these methods are accessed using dot operator (.)
+
+a) .length -> determine length of a string / no of characters in a string
+b) .toUpperCase() - convert all chaaracters to upper case
+c) .toLowerCase() - convert characters to lower case
+d) .includes()
+e) .indexOf()
+f) .slice()
+g) .replace()
+h) .trim()
+i) .split() - splits a string into an array
+j) .charAt()
+k) .startsWith()
+l) .endsWith()
+m) .concat()
+
+
+
+
+
+Number Methods
+.toFixed()
+Math.round()
+isNaN
+
+
+N/B -  type casting + template literals
+
+TASK 
+- slide 53 
+1.parseInt()
+2.parseFloat()
+3.Number.isInteger()
+4.Math.floor()
+5.Math.ceil()
+6.toString()
+
+Create a new HTML file(stringtask.html) and attempt the 3 questions below:
+1.Clean up the following variable to give the clean version in lower case. Using inbuilt methods in the string class
+    f_name = “  JOHn  .“ to “john”
+2.Slice the below string to get you the resulting sentence:
+    sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
+    sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display “Clinton forces”
+3.Split the below sentence using a semicolon i.e ; And display length of the result. 
+“The lazy dog; ran so fast; it hit the wall.” 
+
+
+Number Methods 
+
+1.parseInt() - type conversion from string to number - integer
+2.parseFloat() - type conversion from string to float
+
+typeof() - returns the data type of a value
+
+
+OPERATORS 
+- symbols or keywords used to perform operations on values or variables
+
+Categories of Operators
+1. Arithmetic Operators
+2. Comparison Operators
+3. Assignment Operators
+4. Logical Operators
+
+
+1. Arithmetic Operators - used to perform arithmetic calculations
+ -> + , - , % , // ,/ ,* , **, ++ ,--
+++ -> incremental operator  
+-- -> decrement operator 
+
+2. Comparison Operators - used to compare values -> return boolean values
+-> > < >= , <=, != ,
+== -> equality -> compares if two variables are same in value  '5' == 5
+=== -> strict equality -> checking for both value and data type 
+!== -> strict inequality
+
+3. Assignment Operators - assign values to variables
+= , += , -= , /= , %= ,**=
+
+4. Logical Operators 
+&& - AND  - returns true if all are true
+|| - OR  -  returns true if one is true
+! - NOT  - returns the opposite value of a boolean
+
+
+
+TYPE CASTING
+-the process of converting data from one type to another
+1. Implicit conversion - type coercion 
+-> JS automtically converts types when needed to
+2. Explicit conversion - manual conversion
+
+Polymorphism -> operator overloading -> taking more than form / purpose
++ -> perform the arithemtic operation of summing
++ -> concatenate two strings
+
+
+Template literals - embedding variables into strings 
+- we use back ticks and $
+
+
+Conditional Statements -> decision makers
+types of conditional statements
+1. If else - one condition to be met 
+2. if , else if ,else -> multiple condtions / options to be met
+
+IN general :
+if (condition){
+    statement for if
+}else{
+    statement for else
+}
+
+
+if (condition 1){
+    statement for condition 1
+}else if (condition 2){
+    statement for condition 1
+}else if (condition 2){
+    statement for condition 3
+}
+else{
+    statement for else
+}
+
+
+1. Write a JS program that checks if a number is even or odd
+2. Write a JavaScript program that displays the largest integer among three integers.
+
+Taking user input in JS
+1.prompt()  -> simplest way to take user input
+
+N/B: Any data from user input will ALWAYS be a STRING
+
+
+TASK
+1. Create a variable called year and enter the a random year. Check if the year is a leap year or not. A leap year is a year that is divisible by 4  not divisible by 100 or divisible  by 400.
+
+2. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :J
+September, October or November, the season is Autumn.
+December, January or February, the season is Winter.
+March, April or May, the season is Spring
+June, July or August, the season is Summer
+
+3. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
+
+4. Write a code which can give grades to students according to theirs scores:
+80-100, A
+70-89, B
+60-69, C
+50-59, D
+0-49, F
+
+TERNARY OPERATOR  - SHORTHAND FOR IF STATEMENTS
+
+
+ARRAYS IN JS 
+-DATA STRUCTURE THAT CAN STORE MULTIPLE ITEMS OF DIFFERENT TYPES
+-Equivalent of a list in Python
+                Properties  
+1. syntax -> []
+2. are ordered - access values using index - indexing is zero based 
+3. are mutable - alter values
+4. arrays can store multiple values of different types  - 
+
+Array Operations
+1. accessing values in an array  - use index
+2. Updating or modifying values in an array - use index
+3. Check for the no of values in an array - length 
+4. adding elements to an array  - insert at the end -push()
+                                - insert at the begining - unshift()
+5. removing elements from an array - remove at the end -pop() -removes last element
+                                    - remove at the beginning -shift() - removes first element
+6. getting index of a value in an array -> indexOf()
+7. revsering an array  reverse()
+8. sorting an array - sort()
+9. combining two strings - concat
+
+10. slice() The slice() method slices out a piece of an array into a new array:
+11. splice() The splice() method adds new items to an array.
+12. includes()
+13. toString() The toString() method returns the elements of an array as a comma separated string.
+14. join()
+
+
+a year is a leap year if:
+1. The year is divisble by 400
+2. The year is divisible by 4 && not divisible by 100
