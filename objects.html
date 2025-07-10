@@ -6,23 +6,31 @@
     <title>Document</title>
 </head>
 <body>
+    
+
+
     <script>
-        let person={
+        let person = {
             "full name":"Jane Kilonzo",
             "age": 40,
             "address":"Nairobi",
             "married":true,
-
         }
         console.log(person)
-
+        //{name: 'Jane Kilonzo', age: 40, address: 'Nairobi', married: true}
         console.log(person["full name"])
 
+        // Jane Kilonzo
+
+        //object methods 
+
         console.log(Object.keys(person))
-
+        //['full name', 'age', 'address', 'married']
         console.log(Object.values(person))
-
+        // ['Jane Kilonzo', 40, 'Nairobi', true]
         console.log(Object.entries(person))
+
+        // [Array(2), Array(2), Array(2), Array(2)]
     </script>
 </body>
 </html>

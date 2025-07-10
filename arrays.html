@@ -60,6 +60,31 @@
         //['Jane', 'John', 'Mike', 'Rose']
 
 
+        let fruits = ["orange", "mango","banana","apple"]
+
+        //splice - remove elements
+        fruits.splice(1,2)
+        console.log(fruits)
+        // ['orange', 'banana', 'apple']
+        // ['orange', 'apple']
+
+        //splice - add elements 
+        fruits.splice(1, 0, "pineapple","pawpaw")
+        console.log(fruits)
+        //['orange', 'pineapple', 'apple']
+
+
+        //splice - replace elements
+        fruits.splice(1,2,"grapes","peach")
+        console.log(fruits)
+        // ['orange', 'grapes', 'peach', 'apple']
+
+        let joined_value = fruits.join('-')
+        console.log(joined_value)
+        //orangegrapespeachapple
+        // orange-grapes-peach-apple
+
+
 
     </script>
 

@@ -221,13 +221,121 @@ Array Operations
 8. sorting an array - sort()
 9. combining two strings - concat
 
-10. slice() The slice() method slices out a piece of an array into a new array:
-11. splice() The splice() method adds new items to an array.
+10. slice()
+11. splice() - remove elements , add elements and replace elements
 12. includes()
-13. toString() The toString() method returns the elements of an array as a comma separated string.
-14. join()
+13. toString()
+14. join() - combine all array values into a single string
+
 
 
 a year is a leap year if:
 1. The year is divisble by 400
 2. The year is divisible by 4 && not divisible by 100
+
+
+2. OBJECTS
+An object is a data structure that stores values in key value pairs
+Equivalent to a Python dictionary
+
+Properties of Objects
+1. Store data in key-value pairs
+2. Values / data is accessed using keys
+3. Mutable - can add, delete or modify values
+4. Keys are always strings
+5. Values can be of any data type
+
+
+Why use Objects
+1. They can store correlated  data
+2. They can store complex structured data
+3. To model / represent real world entities
+
+
+Accessing Object properties
+properties - the key-value pairs
+1. Using dot notation
+    -use dot operator (.) followed by the property name
+    - only works when property names are valid identifiers (no spaces, no special chars, no numbers)
+    -dot notation cannot access a key with spaces
+2. Bracket Notation
+            - use square brackets with the key as a string
+            - can access properties with keys havingg spaces
+
+
+Object Methods
+ .keys() -> gets all keys from your object 
+ .values() ->gets all values from an object
+ .entries() -> gets key value pairs
+
+
+Task 
+-slide 69 & 70 -> arrays
+-slide 75 & 76 -> objects
+
+const userProfile = {
+  id: 101,
+  name: {
+    first: "Brian",
+    last: "Letting"
+  },
+  contact: {
+    email: "brian@example.com",
+    phones: ["+254700000001", "+254700000002"]
+  },
+  address: {
+    current: {
+      city: "Nairobi",
+      street: "Westlands Ave",
+      postalCode: "00100"
+    },
+    previous: [
+      {
+        city: "Eldoret",
+        street: "Main Street",
+        postalCode: "30100"
+      },
+      {
+        city: "Kisumu",
+        street: "Lake View Road",
+        postalCode: "40100"
+      }
+    ]
+  },
+  preferences: {
+    theme: "dark",
+    language: "en",
+    notifications: {
+      email: true,
+      sms: false,
+      push: ["promotions", "updates"]
+    }
+  },
+  projects: [
+    {
+      id: 1,
+      name: "POS System",
+      technologies: ["React", "FastAPI", "PostgreSQL"],
+      tasks: [
+        { title: "Set up DB", done: true },
+        { title: "Design UI", done: false }
+      ]
+    },
+    {
+      id: 2,
+      name: "Portfolio Website",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      tasks: [
+        { title: "Create About Page", done: true },
+        { title: "Deploy to Netlify", done: false }
+      ]
+    }
+  ]
+};
+
+
+Task on the object above
+1. access the value -  "Deploy to Netlify"
+2. access -> "updates"
+3. access -> "Lake View Road"
+4. access -> "PostgreSQL"
