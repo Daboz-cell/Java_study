@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Create a new file called objectTask and attempt the below questions:
+let my_object=[23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES"}], 987, 76,"John"]
+console.log(my_object)
+//Display:
+//1. KES
+console.log( my_object[3][2]["currency"])
+//2. 560
+console.log( my_object[2])
+//3. Maths
+console.log( my_object[3][1])
+//4. In the object with the key currency, add another key “amount” with value 90
+my_object1=my_object[3][2]["amount"]=90
+console.log(my_object)
+//5. Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually
+let number=String(my_object[4])
+let split=number.split("")
+split.reverse()
+console.log(split)
+let join=split.join("")
+console.log(join)
+let value=Number(join)
+my_object[4]=value
+// Hint: arrays can be reversed using reverse() functions
+//6. Change the name “John” to “Jane” . 
+my_object[6]="Jane"
+console.log(my_object)
+
+
+const userProfile = {
+  id: 101,
+  name: {
+    first: "Brian",
+    last: "Letting"
+  },
+  contact: {
+    email: "brian@example.com",
+    phones: ["+254700000001", "+254700000002"]
+  },
+  address: {
+    current: {
+      city: "Nairobi",
+      street: "Westlands Ave",
+      postalCode: "00100"
+    },
+    previous: [
+      {
+        city: "Eldoret",
+        street: "Main Street",
+        postalCode: "30100"
+      },
+      {
+        city: "Kisumu",
+        street: "Lake View Road",
+        postalCode: "40100"
+      }
+    ]
+  },
+  preferences: {
+    theme: "dark",
+    language: "en",
+    notifications: {
+      email: true,
+      sms: false,
+      push: ["promotions", "updates"]
+    }
+  },
+  projects: [
+    {
+      id: 1,
+      name: "POS System",
+      technologies: ["React", "FastAPI", "PostgreSQL"],
+      tasks: [
+        { title: "Set up DB", done: true },
+        { title: "Design UI", done: false }
+      ]
+    },
+    {
+      id: 2,
+      name: "Portfolio Website",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      tasks: [
+        { title: "Create About Page", done: true },
+        { title: "Deploy to Netlify", done: false }
+      ]
+    }
+  ]
+};
+
+
+//Task on the object above
+//1. access the value -  "Deploy to Netlify"
+console.log(userProfile.projects[1].tasks[1].title)
+//2. access -> "updates"
+console.log(userProfile.preferences.notifications.push[1])
+//3. access -> "Lake View Road"
+console.log(userProfile.address.previous[1].street)
+//4. access -> "PostgreSQL"
+console.log(userProfile.projects[0].technologies[2])
+    </script>
+</body>
+</html>
