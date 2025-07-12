@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Create a file called mylooptask.html. console.log numbers that are only divisible by 5 and 7 
+        //  and between 0 to 500.
+        for (let i = 0; i <= 500; i++) {
+            if (i % 5 === 0 && i % 7 === 0) {
+                console.log(i);
+            }
+        }
+
+        //The output should be 35, 70, 105…..
+        //Hint: Use For loop and IF statements
+        //1. Display numbers from 20 to 80 in console log
+        for (let i = 20; i <= 80; i++) {
+            console.log(i);
+        }
+
+        //2. Improve num 1 above, only display numbers divisible by 7
+        //i.e 21, 28, 35...
+        for (let i = 20; i <= 80; i++) {
+            if (i % 7 === 0) { console.log(i); }
+
+        }
+
+        //3. Store the numbers divisible by 7, in an array
+        let Divisibleby7 = []
+
+        for (let i = 20; i <= 80; i++) {
+            if (i % 7 === 0) {
+                Divisibleby7.push(i)
+            }
+        }
+
+        //4. Display that array with all the values.
+        console.log(Divisibleby7)
+
+        
+    </script>
+</body>
+
+</html>
