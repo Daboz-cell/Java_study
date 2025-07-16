@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //TASK 5: Using Python or PHP or Java or Ruby or JavaScript
+        // Implement a program that takes 3 users  inputs from the terminal or the Browser, and stores them in three variables.
+        //  Return the largest of the three. Do this without using the the inbuilt max () function!
+        // The goal of this exercise is to think about some internals that programs normally take care of for us. 
+        value1 = Number(prompt("Enter a value"))
+        value2 = Number(prompt("Enter a value"))
+        value3 = Number(prompt("Enter a value"))
+        
+        function check_largest(value1, value2, value3) {
+            largest_value=Math.max(value1,value2,value3) 
+            return "The largest value is"+" "+largest_value
+        }
+        largest_v=check_largest(value1, value2, value3)
+        console.log(largest_v)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //TASK 6:Using Python or PHP or Java or Ruby or JavaScript
+        // Write a program that lets the user input a password. 
+        // Give them only 4 attempts to check the passwords entered against “admin@123”. 
+        // If the password is correct access is granted.
+        //  After you show them a message , the account is blocked.
+        // Once you learn functions,revisit this and write this code inside a function.
+
+
+
+        function check_password() {
+            let correct_password = "admin@123"
+            let attemptsleft = 4
+
+            for (let attempts = 1; attempts <= 4; attempts++) {
+                let password = prompt(`attempt ${attempts} :Enter password`)
+                if (password === correct_password) {
+                    alert("Access granted");
+
+                }
+                else {
+
+                    if (attempts < attemptsleft) {
+                        alert("Incorrect password.")
+                    }
+                    else {
+                        alert("Account blocked")
+                    }
+                }
+            }
+
+        }
+        check_password()
+        
+
+    </script>
+</body>
+
+</html>

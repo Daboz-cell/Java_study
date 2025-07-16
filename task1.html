@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        //TASK 1: Using Python or PHP or Java or Ruby or JavaScript
+        //Write a program that prompts the user to enter the base and height of a triangle and returns its area.
+
+        function calculate_area_triangle(height, base) {
+            area = height * base * 0.5
+            return {"Area of triangle is":area}
+        }
+        let height = Number(prompt("Enter height:"))
+        let base = Number(prompt("Enter base:"))
+        area_triangle = calculate_area_triangle(height, base)
+        console.log(area_triangle)
+    </script>
+</body>
+
+</html>

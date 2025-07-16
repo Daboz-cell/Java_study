@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Write a program that takes input of 2 values and adds them. 
+        // The program should only accept numbers and floats only or 
+        // otherwise display an error “invalid character entered” and
+        //  take the user to re-enter the inputs .
+
+        function AddNumbers() {
+            while (true) {
+                let value1 = parseFloat(prompt("Enter value"));
+                let value2 = parseFloat(prompt("Enter value"));
+                if ((isNaN(value1)) || (isNaN(value2))) {
+                    alert("Invalid Characters entered. Please enter valid numbers");
+                    continue;
+                }
+                let sum=value1+value2
+                console.log("The sum is: "+ sum)
+                break
+            }
+        }
+        AddNumbers()
+    </script>
+</body>
+
+</html>

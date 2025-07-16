@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //ASK 7: Using Python or PHP or Java or Ruby or JavaScriptWrite 
+        // that prompts the user to input student marks. 
+        // The input should be between 0 and 100.
+        // Then output the correct grade
+        // : A > 79 , B - 60 to 79, C  > 49 to 59, D - 40 to 49, E - less 40
+        let student_marks = parseFloat(prompt("Enter student marks"))
+        let grade = ""
+        function check_grade() {
+            if (student_marks < 0 || student_marks > 100) {
+                return "please enter a valid mark between 0 and 100"
+            }
+            if (student_marks > 79) {
+                return grade = "A"
+            }
+            else if (student_marks <= 79 || student_marks >= 60) {
+               return grade = "B"
+            }
+            else if (student_marks <= 59 || student_marks >= 50) {
+              return  grade = "C"
+            }
+            else if (student_marks <= 49 || student_marks >= 40) {
+              return  grade = "D"
+            }
+            else {
+                grade = "E"
+            }
+        }
+        graded=check_grade()
+        console.log(graded)
+    </script>
+</body>
+
+</html>

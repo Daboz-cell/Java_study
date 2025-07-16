@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a program which gets a phone number from a form input or terminal. 
+        // Validates the phone number by checking if it starts
+        //  with +254.. or 07.. or 7… or 254.. or 01... or  1.. 
+        // Convert the number to start with +254… e.g if a user enters “0712345678”, 
+        // the program should display “+254712345678”e.g
+        //  if a user enters “0112345678”, the program should display “+254112345678”e.g
+        //  if a user enters “712345678”, the program should display “+254712345678”
+
+        let phone_number = prompt("Enter phone number:").trim()
+        let formatted = ""
+        function validate_phone_number(phone_number) {
+            if ((phone_number.startsWith("+254")) && (phone_number.length == 13)) {
+                 formatted = phone_number
+            }
+            else if ((phone_number.startsWith("254")) && (phone_number.length == 12)) {
+                 formatted = "+" + phone_number
+            }
+            else if ((phone_number.startsWith("07") || phone_number.startsWith("01")) && (phone_number.length == 10)) {
+                 formatted = "+254" + phone_number.slice(1)
+            }
+
+            else if ((phone_number.startsWith("7") || phone_number.startsWith("1")) && (phone_number.length == 9)){
+                 formatted = "+254" + phone_number.slice(0)
+            }
+            else { "Invalid phone number format" }
+            return formatted
+
+        }
+
+        phone = validate_phone_number(phone_number)
+        console.log(phone)
+    </script>
+</body>
+
+</html>

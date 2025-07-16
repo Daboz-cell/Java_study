@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // TASK 2: Using Python or PHP or Java or Ruby or JavaScriptPrompt
+        //  the user for a number either on a form input or the terminal. 
+        // Depending on whether the number is even or odd, display  either “odd” or “even” to the user. 
+        // Hint: how does an even / odd number react differently when divided by 2?
+        function check_even_or_odd(num) {
+            if (num % 2 == 0) {
+
+                if (num % 4 == 0) {
+                    return "The number is divisible by 4"
+                }
+                else {
+                    return "The number is Even"
+                }
+            } else {
+                return "The number is Odd"
+            }
+        }
+        let number = Number(prompt("Enter a number"))
+        even = check_even_or_odd(number)
+        console.log(even)
+    </script>
+</body>
+
+</html>

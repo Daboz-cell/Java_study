@@ -366,3 +366,59 @@ condition -> condition to be met to stop looping
 update -> increments or decrements
 
 Loops Task - slide 78 & 79
+
+
+Using the link HERE , copy the array of JSON objects containing countries with their populations. Display in an object showing how many countries have population between 0 - 50m, 51m - 100m, > 100m as the keys
+e.g 
+	pops = { “0-50m” : 216, “51-100m” : 16, ”>100m” : 13 }
+
+
+let array = [ [1,2],[3,4],{"name":"Jane"}]
+
+
+Functions In JS
+A block of code that is meant to execute some instructions or tasks
+
+1. Organization - cleaner code
+2. Modularity - split large code into small chunks
+3. Reusability - use one function more than once
+4. Easier debugging 
+5. Improved Readability
+
+
+syntax of a JS function
+//function defintion
+function function_name(){
+
+}
+e.g function check_even(){
+
+}
+
+//function call
+function_name()
+
+// -> 1. Non-parameterized functions - no parameters
+      2. Parameterized functions - take some parameters
+
+parameter - placeholder variable in place of actual variable when defining
+    a function
+argument - the actual value being passed when calling a function
+
+By convetion - functions use return keywords rather than console statements
+
+
+**Arrow Functions**
+
+
+**Task** -slide 80
+Do task 1 - 20 ... use JS Functions
+
+
+
+prods = [[‘omo’,’30kshs’,’300’], [‘milk’,’50kshs’,’200’],[‘bread’,’45kshs’,’359’], [‘coffee’,’5kshs’,’79’]]
+
+
+Create a new project called Tax Calculator
+-index.html
+-index.js    

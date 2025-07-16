@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Write a program that takes the date of birth of a person 
+        // and the program outputs the age in terms of years,months,days TODAY.
+
+        let birth_date = prompt("Enter your birthdate in the format: YYYY-MM-DD:")
+
+
+
+        function get_age(birth_date) {
+            let date_parts = birth_date.split("-")
+
+            let birth_year = parseInt(date_parts[0])
+            let birth_month = parseInt(date_parts[1])
+            let birth_day = parseInt(date_parts[2])
+
+            let todayDate = 15
+            let todayMonth = 1
+            let todayYear = 2025
+
+            let monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+            if (birth_day > todayDate) {
+                todayMonth--
+                todayDate += monthDays[(todayMonth - 1 + 12) % 12]
+            }
+
+            let calculated_day = todayDate - birth_day
+            let calculated_month;
+            let calculated_year;
+
+            if (birth_month > todayMonth) {
+                calculated_month = 12 - (birth_month - todayMonth)
+                calculated_year = todayYear - birth_year - 1
+            }
+            else {
+                calculated_month = todayMonth - birth_month
+                calculated_year = todayYear - birth_year
+            }
+
+            return { "calculated_year": calculated_year, "calculated_month": calculated_month, "calculated_day": calculated_day }
+
+        }
+        get_age()
+    </script>
+</body>
+
+</html>

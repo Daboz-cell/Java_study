@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //TASK 10: Using Python or PHP or Java or Ruby or JavaScript
+        // Write a program that calculates the total stock in a company from the array/list below
+        //  if we know that the stock is the last digit in every array/list.
+
+        let prods = [['omo', '30kshs', '300'], ['milk', '50kshs', '200'], ['bread', '45kshs', '359'], ['coffee', '5kshs', '79']]
+        function get_stock(array) {
+            stock = 0
+            for (let i = 0; i < array.length; i++) {
+                stock += Number(prods[i][2])
+            }
+            return stock
+        }
+
+        total_stock = get_stock()
+        console.log(total_stock)
+    </script>
+</body>
+
+</html>
